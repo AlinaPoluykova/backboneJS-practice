@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/underscore.js"></script>
+	<script type="text/javascript" src="js/backbone.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+	<div id="block" class="block">
+	</div>
+
+
+	<script type="text/template" id="start"> 
+		<div class="start"> 
+			<div class="userplace">
+				<label for="username">Имя пользователя:</label>
+				<p>(в списке есть пользователи "Саша", "Лена", "Петр")</p>
+				<input type="text" id="username" />
+			</div>
+			<div class="buttonplace">
+				<input type="button" value="Проверить" />
+			</div>
+		</div>
+	</script>
+
+
+	<script type="text/template" id="error">
+		<div class="error">
+			Ошибка. Пользователь  <%= username %> не найден.
+			<a href="#!/">Go back</a>
+		</div>
+	</script>
+
+
+	<script type="text/template" id="success">
+		<div class="success">
+			Пользователь <%= username %> найден.
+			<a href="#!/">Go back</a>
+		</div>        
+	</script>
+
+</html>
+
+
